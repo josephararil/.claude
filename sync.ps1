@@ -19,7 +19,7 @@ $fp = $p.tool_input.file_path
 if ($fp -notlike "*.md") { exit 0 }
 if ($fp -notlike "*\.claude*") { exit 0 }
 
-$repo = "C:\Users\jharari\Documents\GitHub\.claude"
+$repo = "C:\Users\jharari\Documents\GitHub\claude-memory"
 if (-not (Test-Path $repo)) { exit 0 }
 
 Push-Location $repo
